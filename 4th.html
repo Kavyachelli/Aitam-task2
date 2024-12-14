@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            background-color:azure;
+        }
+    </style>
+</head>
+<body>
+    <h1><b><center>EVENT REGISTRATION</center> </b></h1>
+    <form action="submit registration" method="post">
+        <fieldset>
+            <legend >Personal Details</legend>
+            <label for="name">Full name</label>
+            <input type="text" name="name" placeholder="Enter name" id="name">
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <input type="Email" name="email" placeholder="Enter email" id="email">           
+            <br>
+            <br>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Student Details</legend>
+            <label for="roll id">ID</label>
+            <input type="text" name="roll id" placeholder="Enter roll no" id="roll id">
+            <br>
+            <br>
+            <label for="phnno">Phnno</label>
+            <input type="number" name="phnno" placeholder="enter phn no" id="phn no">
+            <br>
+            <br>
+            <label for="student type">Student Type</label>
+           <select name="student type">
+            <optgroup label="Student type">
+                <option value="Hostller">Hostller</option>
+                <option value="Dayscholar">Dayscholar</option>
+            </optgroup>
+           </select>
+           <br>
+           <br>
+           <input type="radio" name="gender" id="gender">male
+           <input type="radio" name="gender" id="gender">female
+           <br>
+           <br>
+        </fieldset>
+        <fieldset>
+            <legend>Pass Collection</legend>
+            <label for="pass">PassCollection</label>
+            <input type="file" name="pass" id="pass">
+            <br>
+            <br>
+            <label for="Pass type">Pass Type</label>
+            <select name="Pass type">
+             <optgroup label="Pass type">
+                 <option value="VIP">VIP</option>
+                 <option value="Standard">Standard</option>
+          
+             </optgroup>
+            </select>
+            <br>
+            <br>
+        </fieldset>
+       <fieldset>
+          <legend >Event information</legend>
+            <label for="date">Date</label>
+            <input type="date" name="date" placeholder="Enter date" id="date">
+            <br>
+            <br>
+            <label for="time">Time</label>
+            <input type="time" name="time" placeholder="Enter time" id="time">
+            <br>
+            <br>
+          <label for="comments">comments</label>
+          <textarea name="comments" id="comments" placeholder="enter comments or questions regarding event"></textarea>
+          <br>
+          <br>
+          <input list="events"id="text" name="text">
+          <dataset>
+             <option value="Hackathons" >Hackathons</option>
+             <option value="event manager" >Event manager</option>
+             <option value="Anchor" >Anchor</option>
+          </dataset>
+</fieldset>
+<fieldset>
+    <label>
+        <input type="checkbox" name="terms">I agree to the terms and conditions 
+    </label>
+    <br>
+    <br>
+    <button>submit</button>
+</fieldset>
+
+
+    </form>
+    
+</body>
+</html>
